@@ -9,16 +9,18 @@ import Crafts from './Components/Pages/Crafts'
 import FindCraft from './Components/Pages/FindCraft'
 import Register from './Components/Register'
 import Login from './Components/Login'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
-function App() {
+function AppContent() {
+
+   const location = useLocation();
+  const isHome = location.pathname === "/"; 
 
   return (
     <>
-     <BrowserRouter>
-      <Navbar />
+      <Navbar isHome={isHome} />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/crafts" element={<Crafts />} />
         <Route path="/findcraft" element={<FindCraft />} />
@@ -26,11 +28,16 @@ function App() {
         <Route path="/login" element={<Login/>} />
 
       </Routes>
-      </BrowserRouter>
  
 
     </>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
+  );
+}

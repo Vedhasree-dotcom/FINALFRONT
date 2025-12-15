@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PopupLoginReminder from '../PopupLoginReminder';
-
+import Navbar from '../Navbar';
 
 function Home() {
 
@@ -18,15 +18,11 @@ function Home() {
   
        {showPopup && <PopupLoginReminder />}
 
-      <div className={`home  ${showPopup ? "blurred" : ""}`}>
-       <h2 className='text-overlay'>Every Craft Has a Story</h2>
-
-       <div className='container'>
-        <h1>hy</h1>
-       </div>
+      <div className={`home-hero ${showPopup ? "blurred" : ""}`}>
+        <h1 className='text-overlay'>Every Craft Has a Story</h1>
+      </div>
 
 
-    </div>
 
     </>
   )

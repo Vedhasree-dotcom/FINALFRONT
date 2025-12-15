@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
 
-const Navbar = () => {
+const Navbar = ({ isHome }) => {
   const { user, logout } = useAuth();
 
   return (
-    <nav className="navbar expand-lg">
+    <nav className={`navbar ${isHome ? "navbar-home" : "navbar-normal"}`}>
         <h2  className="logo">CraftMate</h2>
 
        <div className="nav-right">
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
 
         <div className="dropdown">
