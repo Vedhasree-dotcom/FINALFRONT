@@ -8,7 +8,7 @@ body{
 .navbar {
   width: 100vw;
   z-index: 10;
-  padding: 20px 0;
+  padding: 15px 0;
   position: fixed;
 }
 
@@ -19,7 +19,7 @@ body{
   left: 0;
   width: 100vw;
   z-index: 1000;
-  background: brown;
+  background: rgb(180, 113, 32);
   opacity: 4;
 }
 
@@ -27,7 +27,7 @@ body{
 .navbar-normal {
   position: sticky;
   top: 0;
-  background: brown;
+  background: rgb(180, 113, 32);
   color: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -35,7 +35,7 @@ body{
 .nav-right {
   display: flex;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 150px;
   padding: 20px 10px;
   gap: 40px;
 }
@@ -120,8 +120,8 @@ body{
 } */
 
 .home-hero {
-  height: 100vh;
-  background-image: url("");
+  height: 80vh;
+  background-image: url("https://images.pexels.com/photos/6146655/pexels-photo-6146655.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,12 +130,12 @@ body{
 }
 
 /* dark overlay */
-/* .home-hero::before {
+.home-hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
-} */
+}
 
 
  .blurred {
@@ -147,15 +147,18 @@ body{
 .text-overlay{
   position: absolute;
   z-index: 4;
-  top: 50%;         
+  top: 40%;         
   left: 50%;  
   text-shadow: 3px 3px rgb(39, 38, 38);      
   transform: translate(-50%, -50%);
-  color: wheat;
+  color: rgb(211, 164, 92);
   font-size: 55px;
   font-weight: bold;
   text-align: center;
 }
+
+
+/*............... About page.............. */
 
 
 
