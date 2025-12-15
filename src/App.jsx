@@ -9,6 +9,7 @@ import Crafts from './Components/Pages/Crafts'
 import FindCraft from './Components/Pages/FindCraft'
 import Register from './Components/Register'
 import Login from './Components/Login'
+import Footer from './Components/Footer'
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 function AppContent() {
@@ -28,6 +29,8 @@ function AppContent() {
         <Route path="/login" element={<Login/>} />
 
       </Routes>
+      
+      <Footer/>
  
 
     </>
