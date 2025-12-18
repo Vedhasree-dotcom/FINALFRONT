@@ -53,10 +53,10 @@ function Home() {
     </section>
 
     <section>
+          <h1 className='course'>Our Highlights</h1>
       <div className="highlights">
-        <h2>Our highlights</h2>
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="" />
+        <Card style={{ width: '18rem' }} className='card'>
+      <Card.Img variant="top" className='image' src="https://images.pexels.com/photos/7606010/pexels-photo-7606010.jpeg" />
       <Card.Body>
         <Card.Title>Paper Crafts</Card.Title>
         <Card.Text>
@@ -68,8 +68,8 @@ function Home() {
 
     </Card>
 
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="" />
+    <Card style={{ width: '18rem' }} className='card'>
+      <Card.Img variant="top" className='image' src="https://images.pexels.com/photos/6212326/pexels-photo-6212326.jpeg" />
       <Card.Body>
         <Card.Title>Home Decor</Card.Title>
         <Card.Text>
@@ -82,8 +82,8 @@ function Home() {
 
     </Card>
 
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="" />
+    <Card style={{ width: '18rem' }} className='card'>
+      <Card.Img variant="top" className='image' src="https://images.pexels.com/photos/4860078/pexels-photo-4860078.jpeg" />
       <Card.Body>
         <Card.Title>Painting</Card.Title>
         <Card.Text>
@@ -97,8 +97,8 @@ function Home() {
 
     </Card>
 
-     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="" />
+     <Card style={{ width: '18rem' }}  className='card'>
+      <Card.Img variant="top" className='image' src="https://images.pexels.com/photos/5807031/pexels-photo-5807031.jpeg" />
       <Card.Body>
         <Card.Title>Knitting</Card.Title>
         <Card.Text>
