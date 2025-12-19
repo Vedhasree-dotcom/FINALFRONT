@@ -18,7 +18,7 @@ const Navbar = ({ isHome }) => {
             <Link to="/all">All Crafts</Link>
             <Link to="/crafts/category/paper">Paper Crafts</Link>
             <Link to="/crafts/category/home">Home Decor</Link>
-            <Link to="/crafts/category/kids">Kids Crafts</Link>
+            <Link to="/crafts/category/knitting">Knitting</Link>
           </div>
         </div>
         <Link to="/findcraft">FindCraft</Link>

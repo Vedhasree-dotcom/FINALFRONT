@@ -53,59 +53,99 @@ function Home() {
     </section>
 
     <section>
-          <h1 className='course'>Our Highlights</h1>
+        <h1 className='course'>Our Highlights</h1>
       <div className="highlights">
-        <Card style={{ width: '18rem' }} className='card'>
-      <Card.Img variant="top" className='image' src="https://images.pexels.com/photos/7606010/pexels-photo-7606010.jpeg" />
+        <Card className='card'>
+      <Card.Img className='image' src="https://images.pexels.com/photos/7606010/pexels-photo-7606010.jpeg" />
       <Card.Body>
         <Card.Title>Paper Crafts</Card.Title>
-        <Card.Text>
+        <Card.Text style={{fontSize: "14px" , textAlign: "justify"}}>
           From origami and quilling to handmade cards and wall art, 
           paper crafting transforms ordinary sheets into beautiful creations.
         </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+        <Link to="/crafts/category/paper"
+        style={{
+          backgroundColor: "brown",
+          color: "white",
+          fontSize: "14px",
+          padding: "6px 20px",
+          borderRadius: "4px",
+          marginBottom: "0px",
+          textDecoration: "none"
+        }} >
+        View
+        </Link>
+
       </Card.Body>
 
     </Card>
 
-    <Card style={{ width: '18rem' }} className='card'>
+    <Card  className='card'>
       <Card.Img variant="top" className='image' src="https://images.pexels.com/photos/6212326/pexels-photo-6212326.jpeg" />
       <Card.Body>
         <Card.Title>Home Decor</Card.Title>
-        <Card.Text>
-          Handcrafted home décor adds warmth, personality, and elegance to living spaces. 
-          Using materials like wood, fabric, clay, and recycled items, 
+        <Card.Text style={{fontSize: "14px", textAlign: "justify"}}>
+          Handcrafted home décor adds warmth, personality, 
           home décor crafts blend traditional artistry with modern design
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Link to="/crafts/category/home"
+        style={{
+          backgroundColor: "brown",
+          color: "white",
+          fontSize: "14px",
+          padding: "6px 20px",
+          borderRadius: "4px",
+          marginBottom: "0px",
+          textDecoration: "none"
+        }}
+        >View</Link>
       </Card.Body>
 
     </Card>
 
-    <Card style={{ width: '18rem' }} className='card'>
+    <Card  className='card'>
       <Card.Img variant="top" className='image' src="https://images.pexels.com/photos/4860078/pexels-photo-4860078.jpeg" />
-      <Card.Body>
+      <Card.Body >
         <Card.Title>Painting</Card.Title>
-        <Card.Text>
-          From watercolor and acrylic to traditional and contemporary styles, 
-          painting allows artists to explore creativity while creating visually 
+        <Card.Text style={{fontSize: "14px", textAlign: "justify"}}>
+          From watercolor and acrylic painting allows artists to explore creativity while creating visually 
           stunning and expressive artwork.
         </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+
+          <Link to="/crafts/category/painting"
+          style={{
+            backgroundColor: "brown",
+            color: "white",
+            fontSize: "14px",
+            padding: "6px 20px",
+            borderRadius: "4px",
+            marginBottom: "0px",
+            textDecoration: "none"
+          }}
+          >View</Link>
 
       </Card.Body>
-
     </Card>
 
-     <Card style={{ width: '18rem' }}  className='card'>
+     <Card className='card'>
       <Card.Img variant="top" className='image' src="https://images.pexels.com/photos/5807031/pexels-photo-5807031.jpeg" />
       <Card.Body>
         <Card.Title>Knitting</Card.Title>
-        <Card.Text>
-          This craft blends tradition with modern design, 
-          offering comfort, sustainability, and personal expression in every stitch.
+        <Card.Text style={{fontSize: "14px", textAlign: "justify"}}>
+          This craft blends tradition with modern design,offering comfort, sustainability, and personal expression in every stitch.
         </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Link to="/crafts/category/knitting"
+          
+          style={{
+            backgroundColor: "brown",
+            color: "white",
+            fontSize: "14px",
+            padding: "6px 20px",
+            borderRadius: "4px",  
+            marginBottom: "0px",
+            textDecoration: "none"
+          }}
+          > View</Link>
       </Card.Body>
 
     </Card>

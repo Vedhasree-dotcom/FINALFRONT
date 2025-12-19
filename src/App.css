@@ -233,18 +233,18 @@ body{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
-  height: 400px;
+  width: 280px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover{
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.image{
-  height: 350px;
-  object-fit: contain;
 
-
+.card .image{
+  height: 300px;
+  object-fit: cover;
 }
 
 
