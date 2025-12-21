@@ -6,7 +6,7 @@ body{
 /*.............. Navbar............... */
 .navbar {
   width: 100vw;
-  padding: 15px 0;
+  padding: 13px 0;
   z-index: 1000;
   position: fixed;
   background: rgb(180, 113, 32);
@@ -299,11 +299,73 @@ body{
 
 
 
-
-
-
 /*............... About page.............. */
 
+.banner h3{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.banner img{
+  width: 100vw;
+  height: 245px;
+  object-fit: cover;
+  position: relative;
+}
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  margin-top: 12px;
+  padding: 40px 60px;
+}
+.content h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: brown;
+  
+}
+.content p{
+  font-size: 16px;
+  margin-top: 12px;
+  line-height:1.7;  
+  text-align: justify;
+  color: black;
+}
+.grid2 img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.more-info{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 40px;
+}
+.sub{
+  background-color: peachpuff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+.sub h3{
+  padding: 10px 0 ;
+}
+.sub p{
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.7;
+
+}
 
 
 
