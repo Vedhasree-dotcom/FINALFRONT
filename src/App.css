@@ -31,58 +31,19 @@ body{
   text-decoration: none;
 }
 
-.navbar a,
-.dropdown-title {
+.navbar a{
   color: white;
   text-decoration: none;
   cursor: pointer;
   font-size: 15px;
 }
 
-.navbar a:hover,
-.dropdown-title:hover {
+.navbar a:hover{
   color: wheat;
 }
 
-.dropdown {
-  position: relative;
-}
 
-.dropdown-menu {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  background: white;
-  color: brown;
-  border-radius: 8px;
-  min-width: 180px;
-  display: none;
-  flex-direction: column;
-  padding: 10px 0;
-  /* z-index: 100; */
-}
 
-.dropdown-menu a,
-.dropdown-menu button {
-  padding: 10px 16px;
-  color: brown;
-  background-color: white;
-  text-align: left;
-  border: none;
-  background: none;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.dropdown-menu a:hover,
-.dropdown-menu button:hover {
-  background: brown;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: flex;
-}
 
 .auth-btn {
   margin-left: 15px;
